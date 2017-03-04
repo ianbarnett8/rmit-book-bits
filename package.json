@@ -1,0 +1,29 @@
+{
+  "name": "rmit-book-bits",
+  "version": "1.0.0",
+  "description": "RMIT Student Project",
+  "main": "index.js",
+  "scripts": {
+    "www": "gulp webserver",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianbarnett8/rmit-book-bits.git"
+  },
+  "keywords": [
+    "rmit",
+    "project",
+    "student"
+  ],
+  "author": "Ian Barnett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianbarnett8/rmit-book-bits/issues"
+  },
+  "homepage": "https://github.com/ianbarnett8/rmit-book-bits#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
