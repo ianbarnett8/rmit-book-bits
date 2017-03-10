@@ -1,41 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Vendor Resources -->
     <script src="./libs/js/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            let [cx,cy] = [$(document).width()/2, $(document).height()/2 - 200];
 
-            let pixw = 100;
-            let pixm = pixw / 2;
-
-            let parts = ['left-eye', 'right-eye', 'm1', 'm2', 'm3'];
-            let initp = {
-                'left-eye': [-150, -150],
-                'right-eye': [50, -150],
-                'm1': [-150, 100],
-                'm2': [-50, 150],
-                'm3': [50, 100]
-            };
-
-            parts.forEach(p => {
-                let id = `#${p}`;
-                $('body').append(`<div id=${p} class='face'></div>`);
-                $(id).attr('style', `left: ${cx}px; top: ${cy}px`);
-                $(id).animate({left: `+=${initp[p][0]+pixm}`, top: `+=${initp[p][1]}`});
-            });
-
-
-        });
-    </script>
-    <style>
-        .face {
-            background: green;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-        }
-    </style>
+    <!-- Our Resources -->
+    <script src="scripts/face.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/hello-wink.css" />
 </head>
 <body>
+
+    <script>
+        $(document).ready(function(){ showFace() });
+    </script>
+</body>
 </html>
